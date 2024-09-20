@@ -5,7 +5,8 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - DATABASE_URL=postgresql://akash_sit722_part3_w5jn_user:Zm1GjEEcKC85QRdmhRNTLrrSjpnbGmiE@dpg-crj6eelds78s73e8ka6g-a/akash_sit722_part3_w5jn
+      - DATABASE_URL=postgresql://reddy_sit722_part2_uc59_user:KNSBcPt8xOSQdGVGLtS1QlaKQBHlmRGe@dpg-crkbmvjv2p9s73b4pr1g-a.oregon-postgres.render.com/reddy_sit722_part2_uc59
+---
     depends_on:
       - postgres
 
@@ -15,15 +16,16 @@ services:
     ports:
       - "8001:8001"
     environment:
-      - DATABASE_URL=postgresql://akash_sit722_part3_w5jn_user:Zm1GjEEcKC85QRdmhRNTLrrSjpnbGmiE@dpg-crj6eelds78s73e8ka6g-a/akash_sit722_part3_w5jn
+      - DATABASE_URL=postgresql://reddy_sit722_part2_uc59_user:KNSBcPt8xOSQdGVGLtS1QlaKQBHlmRGe@dpg-crkbmvjv2p9s73b4pr1g-a.oregon-postgres.render.com/reddy_sit722_part2_uc59
+---
     depends_on:
       - postgres
 
   postgres:
     image: postgres:13
     environment:
-      POSTGRES_USER: akash722w07_user
-      POSTGRES_PASSWORD: aaJSV8dVYlqe3ar2EyLldmRRValTCnnH
-      POSTGRES_DB: akash722w07
+      POSTGRES_USER: reddy_sit722_part2_uc59_user
+      POSTGRES_PASSWORD: KNSBcPt8xOSQdGVGLtS1QlaKQBHlmRGe
+      POSTGRES_DB: eddy_sit722_part2_uc59
     ports:
       - "5433:5432"
